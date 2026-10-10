@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú digital de Pappa's Grill Sabinas. Consulta la carta, pide por WhatsApp y encuentra la ubicación.">
+  <meta name="theme-color" content="#171717">
+  <title>Pappa's Grill Sabinas | Menú digital</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M24 4c-7 6-12 12-12 19a12 12 0 0 0 24 0c0-7-5-13-12-19Z' fill='%23F5F0E8'/%3E%3Cpath d='M24 10c-3 3.5-5 7-5 11a5 5 0 0 0 10 0c0-4-2-7.5-5-11Z' fill='%23D62828'/%3E%3Cpath d='M9 34h30' stroke='%23E8A23A' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M5 40h38' stroke='%23F5F0E8' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/app.js"></script>
+</head>
+<body>
+
+  <!-- ======================= ENCABEZADO ======================= -->
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+
+      <a class="brand" href="#top" aria-label="Pappa's Grill Sabinas, inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img" focusable="false">
+            <path d="M24 4c-7 6-12 12-12 19a12 12 0 0 0 24 0c0-7-5-13-12-19Z" fill="var(--color-cream)"/>
+            <path d="M24 10c-3 3.5-5 7-5 11a5 5 0 0 0 10 0c0-4-2-7.5-5-11Z" fill="var(--color-red)"/>
+            <path d="M9 34h30" stroke="var(--color-gold)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M5 40h38" stroke="var(--color-cream)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name" id="brand-name">Pappa's Grill</span>
+          <span class="brand__sub">SABINAS · GRILL &amp; BAR</span>
+        </span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="nav-menu" aria-label="Navegación principal">
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#reseñas">Reseñas</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a class="button button--red button--small" data-whatsapp target="_blank" rel="noopener noreferrer">
+          <svg class="icon icon--wa" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1a14 14 0 0 1-5.6-5 5.6 5.6 0 0 1-1.2-1.6c-1.6-2.7-1-4 .1-4.5.5-.3 1-.3 1.4 0l1 1.4c.1.2.1.5 0 .7l-.5 1c-.1.2 0 .4.1.6a8 8 0 0 0 1.3 1.6c.6.5 1 .8 1.3 1a.5.5 0 0 0 .7 0l.8-.9c.2-.3.5-.2.8-.1l1.7.9c.2.1.4.2.4.4v1.5c0 .3-.1.5-.3.6Z"/>
+          </svg>
+          Pedir por WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" aria-label="Presentación de Pappa's Grill Sabinas">
+      <div class="hero__backdrop" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">Grill americano · Sabinas, Coahuila</p>
+        <h1 class="hero__title" id="hero-title">Pappa's Grill Sabinas</h1>
+        <p class="hero__sub">
+          Hamburguesas, pizzas, alitas, boneless, botanas y más.
+          Consulta el menú desde tu mesa y pide por WhatsApp.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--red" href="#menu">Explorar menú</a>
+          <a class="button button--outline" data-whatsapp target="_blank" rel="noopener noreferrer">
+            Pedir por WhatsApp
+          </a>
+        </div>
+        <ul class="hero__highlights" aria-label="Servicios">
+          <li>Menú a la mano</li>
+          <li>Pedidos por WhatsApp</li>
+          <li>Servicio a domicilio</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= MENÚ ======================= -->
+    <section class="section section--cream" id="menu">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">La carta</p>
+          <h2>Nuestro menú</h2>
+          <p class="section__lede">
+            Explora por categorías. Precios en pesos mexicanos (MXN).
+          </p>
+          <p class="menu-disclaimer" id="menu-disclaimer"></p>
+        </header>
+
+        <div class="category-tabs" id="category-tabs" role="tablist" aria-label="Categorías del menú"></div>
+
+        <div class="dish-grid" id="menu-items" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ======================= GALERÍA ======================= -->
+    <section class="section section--dark" id="galeria">
+      <div class="container">
+        <header class="section__head section__head--light">
+          <p class="section__eyebrow">Ambiente &amp; sazón</p>
+          <h2>Galería</h2>
+          <p class="section__lede">Fotografías del lugar y de nuestros platillos.</p>
+        </header>
+
+        <div class="gallery-grid" id="gallery-grid" hidden></div>
+
+        <div class="gallery-empty" id="gallery-empty">
+          <span class="gallery-empty__icon" aria-hidden="true">▣</span>
+          <h3>La galería se está preparando</h3>
+          <p>
+            Pronto subiremos fotografías del restaurante.
+            Consulta <code>assets/images/gallery/README.md</code> para saber
+            cómo agregar imágenes a esta sección.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= RESEÑAS GOOGLE ======================= -->
+    <section class="section section--chili" id="reseñas">
+      <div class="container">
+        <header class="section__head section__head--light">
+          <p class="section__eyebrow">Opiniones</p>
+          <h2>Lo que dicen nuestros clientes</h2>
+          <p class="section__lede">
+            Tus comentarios nos ayudan a mejorar.
+          </p>
+        </header>
+
+        <div class="review-badge" id="review-badge" hidden>
+          <span class="review-badge__stars" aria-hidden="true">★★★★★</span>
+          <span>
+            <strong id="badge-rating">4,4</strong>/5
+            <span id="badge-count"></span>
+          </span>
+        </div>
+
+        <div class="review-actions">
+          <a class="button button--red" id="review-primary" target="_blank" rel="noopener noreferrer">
+            Leer reseñas en Google
+          </a>
+          <a class="button button--outline" id="review-secondary" target="_blank" rel="noopener noreferrer">
+            Dejar una reseña
+          </a>
+        </div>
+        <p class="review-note" id="review-note" hidden></p>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACTO / WHATSAPP ======================= -->
+    <section class="cta-strip">
+      <div class="container cta-strip__inner">
+        <div>
+          <h2>¿Listo para pedir?</h2>
+          <p>Pide por WhatsApp o llámanos al restaurante.</p>
+        </div>
+        <div class="cta-strip__actions">
+          <a class="button button--red" data-whatsapp target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon--wa" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1a14 14 0 0 1-5.6-5 5.6 5.6 0 0 1-1.2-1.6c-1.6-2.7-1-4 .1-4.5.5-.3 1-.3 1.4 0l1 1.4c.1.2.1.5 0 .7l-.5 1c-.1.2 0 .4.1.6a8 8 0 0 0 1.3 1.6c.6.5 1 .8 1.3 1a.5.5 0 0 0 .7 0l.8-.9c.2-.3.5-.2.8-.1l1.7.9c.2.1.4.2.4.4v1.5c0 .3-.1.5-.3.6Z"/>
+            </svg>
+            <span data-whatsapp-display>861 798 6927</span> (WhatsApp)
+          </a>
+          <a class="button button--outline" data-tel>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/>
+            </svg>
+            <span data-phone-display>+52 861 612 8704</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= UBICACIÓN ======================= -->
+    <section class="section section--cream" id="ubicacion">
+      <div class="container location">
+        <div class="location__info">
+          <p class="section__eyebrow">Encuéntranos</p>
+          <h2>Ubicación</h2>
+          <address class="location__address" id="location-address"></address>
+          <dl class="hours" id="hours-block"></dl>
+          <p class="hours-note" id="hours-open-since"></p>
+          <div class="location__actions">
+            <a class="button button--red" id="maps-directions" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/>
+              </svg>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+        <div class="location__map" aria-label="Mapa con la dirección del restaurante">
+          <div class="map-embed">
+            <p>Mapa interactivo de Google Maps</p>
+            <a class="button button--outline button--small" id="maps-embed-link" target="_blank" rel="noopener noreferrer">Abrir mapa</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= PIE DE PÁGINA ======================= -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <span class="brand__name" id="footer-name">Pappa's Grill Sabinas</span>
+        <p class="site-footer__address" id="footer-address"></p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul class="site-footer__list">
+          <li><a data-whatsapp target="_blank" rel="noopener noreferrer">WhatsApp: <span data-whatsapp-display>861 798 6927</span></a></li>
+          <li><a data-tel>Tel: <span data-phone-display>+52 861 612 8704</span></a></li>
+          <li><a id="footer-maps" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Síguenos</h4>
+        <div class="site-footer__social" id="social-links"></div>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© <span id="footer-year">2026</span> Pappa's Grill Sabinas.</p>
+      <p class="site-footer__disclaimer">
+        Sitio de menú digital. Datos de contacto públicos; carta y horarios pendientes de confirmación.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ======================= LIGHTBOX ======================= -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Vista ampliada de fotografía">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar vista ampliada">✕</button>
+    <div class="lightbox__stage">
+      <img id="lightbox-img" src="" alt="" />
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+</body>
+</html>
